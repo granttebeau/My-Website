@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  margin: 0px;
+  overflow: scroll;
+}
+.bodypictureback {
+  background-image: url('file:///Users/granttebeau/Desktop/atom/website/photos/newYork.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/* styling for the top navigation bar */
+#topRect {
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: top 0.4s;
+}
+#topRect a {
+  float: left;
+  padding: 14px 10px 10px 10px;
+  text-decoration: none;
+  color: white;
+}
+#topRect-hover:hover {
+  background-color: #2b2b2b;
+  color: white;
+}
+#topRect h1 {
+  margin: 0px;
+  padding: 10px 8px 8px 8px;
+  color: white;
+}
+#topRect p {
+  margin: 0px;
+  padding: 20px;
+  top: auto;
+  font-size: 20px;
+}
+.topRect-right {
+  float: right;
+}
+.topRect-black {
+  background: black;
+}
+
+
+/* styling for the text on top of the background picture  */
+
+#intro {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 390px;
+  position: relative;
+}
+#intro h2 {
+  position: absolute;
+  width: auto;
+  left: 315px;
+  top: 250px;
+  font-size: 50px;
+}
+#intro a {
+  position: absolute;
+  width: auto;
+  font-size: 16px;
+  left: 250px;
+  top: 375px;
+}
+
+/* styling for the about me page */
+
+.graybackground {
+  background-color: #dedede;
+  height: auto;
+  width: auto;
+}
+#aboutme-funfacts {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  position: relative;
+  padding: 400px;
+  text-align: center;
+}
+#aboutme-funfacts h2 {
+  font-size: 40px;
+  position: absolute;
+  top: 225px;
+  left: 770px;
+}
+#aboutme-funfacts p {
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  top: 305px;
+  left: 690px;
+  line-height: 35px;
+}
+#aboutme-funfacts img {
+  position: absolute;
+  height: auto;
+  width: 28%;
+  top: 95px;
+  left: 175px;
+}
+#aboutme-funfacts .guitar-caption {
+  font-size: 10px;
+  color: #999;
+  top: 650px;
+  left: 250px;
+}
+
+
+#aboutme-technical {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding: 400px;
+  color: white;
+  text-align: center;
+}
+#aboutme-technical h2 {
+  position: absolute;
+  top: 245px;
+  left: 215px;
+  font-size: 40px;
+}
+#aboutme-technical p {
+  position: absolute;
+  width: auto;
+  top: 325px;
+  left: 90px;
+  font-size: 16px;
+  line-height: 40px;
+}
+#aboutme-technical a {
+  color: #ccc;
+  text-decoration: none;
+}
+#aboutme-technical img {
+  position: absolute;
+  height: auto;
+  width: 28%;
+  top: 95px;
+  left: 850px;
+}
+.darkgraybackground {
+  background-color: #696969;
+}
+
+
+#aboutme-business {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding: 400px;
+  color: black;
+  text-align: center;
+}
+#aboutme-business h2 {
+  position: absolute;
+  top: 225px;
+  left: 790px;
+  font-size: 40px;
+}
+#aboutme-business p {
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  top: 305px;
+  left: 640px;
+  line-height: 35px;
+}
+#aboutme-business img {
+  position: absolute;
+  height: auto;
+  width: 28%;
+  top: 95px;
+  left: 175px;
+}
+
+
+#aboutme-personality {
+  background-color: #aaa;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding: 435px;
+  color: black;
+  text-align: center;
+}
+#aboutme-personality h1 {
+  position: absolute;
+  font-size: 50px;
+  top: 20px;
+  left: 475px;
+  opacity: 1 !important;
+}
+#aboutme-personality p {
+  position: absolute;
+  font-size: 10px;
+  top: 850px;
+  left: 650px;
+  opacity: 1;
+}
+#aboutme-personality img {
+  position: absolute;
+  height: auto;
+  width: 34%;
+  border: 1px solid black;
+  transition: .5s;
+}
+#images img:hover {
+  filter: blur(3px) brightness(60%);
+}
+#images :not(img) {
+  position: absolute;
+  opacity: 0;
+  transition: .5s
+}
+#images:hover :not(img) {
+  position: absolute;
+  opacity: 1;
+  transition: .5s
+}
+#images p {
+  position: absolute;
+  color: white;
+  z-index: 9999;
+  font-size: 13px;
+  width: 200px
+}
+#images a {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  width: auto;
+}
+
+
+
+/* styling for the personal projects page */
+
+#pp-header {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  position: relative;
+  padding: 125px;
+  text-align: center;
+  font-size: 18px;
+}
+#pp-list {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding: 250px;
+  text-align: center;
+  border: 1px solid black;
+}
+#pp-list h2 {
+  position: absolute;
+  top: 60px;
+  font-size: 50px;
+}
+#pp-list p {
+  position: absolute;
+  top: 160px;
+  font-size: 20px;
+  width: 750px;
+}
+#pp-list a {
+  text-decoration: none;
+}
+#pp-list img {
+  position: absolute;
+  height: auto;
+  width: 25%;
+  border: 1px solid black;
+}
+
+
+/* styling for the contact me page */
+
+#contactme {
+  background-color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding: 315px;
+  color: black;
+  text-align: center;
+}
+#contactme h3 {
+  position: absolute;
+  max-width: 1300px;
+  left: 50px;
+  font-size: 36px;
+}
+#contactme ul {
+  position: absolute;
+  top: 295px;
+  left: 23%;
+}
+#contactme li {
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 40px;
+  padding: 12px 21px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: .5s;
+}
+#contactme a {
+  color: black;
+}
+#contactme a .github:hover {
+  color: #FF7F50;
+  border: 1px solid #FF7F50;
+}
+#contactme a .linkedin:hover {
+  color: #0072b1;
+  border: 1px solid #0072b1;
+}
+#contactme a .facebook:hover {
+  color: #4267B2;
+  border: 1px solid #4267B2;
+}
+#contactme a .instagram:hover {
+  color: #833AB4;
+  border: 1px solid #FD1D1D;
+}
+#contactme a .twitter:hover {
+  color: #00acee;
+  border: 1px solid #00acee;
+}
+
+
+/* styling for the footer of the page */
+footer {
+  position: relative;
+  padding: 1px;
+  height: 35px;
+  text-align: center;
+  font-size: 18px;
+  background-color: black;
+}
+footer p {
+  top: 5px;
+  left: 50%;
+  color: white;
+  font-size: 12px;
+}
