@@ -4,13 +4,12 @@ body {
   margin: 0px;
   overflow: scroll;
 }
+
 .bodypictureback {
   background: url('../photos/newYork.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 /* styling for the top navigation bar */
 #topRect {
@@ -51,7 +50,6 @@ body {
 
 
 /* styling for the text on top of the background picture  */
-
 #intro {
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -73,8 +71,8 @@ body {
   top: 375px;
 }
 
-/* styling for the about me page */
 
+/* styling for the about me page */
 .graybackground {
   background-color: #dedede;
   height: auto;
@@ -241,10 +239,7 @@ body {
   width: auto;
 }
 
-
-
 /* styling for the personal projects page */
-
 #pp-header {
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -283,7 +278,6 @@ body {
 
 
 /* styling for the contact me page */
-
 #contactme {
   background-color: #eee;
   font-family: 'Open Sans', sans-serif;

@@ -1,4 +1,8 @@
+
+// gets the previous page position
 var prevPosition = window.pageYOffset;
+
+// updates the position fo teh topRect div 
 window.onscroll = function() {
 var curPosition = window.pageYOffset;
   if (prevPosition > curPosition) {
