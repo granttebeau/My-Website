@@ -9,6 +9,7 @@ body {
   background: url('../photos/newYork.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 /* styling for the top navigation bar */
@@ -55,22 +56,23 @@ body {
   color: white;
   padding: 390px;
   position: relative;
+  text-align: center;
 }
 #intro h2 {
-  position: absolute;
-  width: auto;
-  left: 315px;
-  top: 250px;
+  position: fixed;
+  width: 25%;
+  left: 19%;
+  top: 34%;
+  min-width: 145px;
   font-size: 50px;
 }
 #intro a {
-  position: absolute;
-  width: auto;
+  position: fixed;
+  width: 35%;
   font-size: 16px;
-  left: 250px;
-  top: 375px;
+  top: 50%;
+  left: 15%;
 }
-
 
 /* styling for the about me page */
 .graybackground {
@@ -346,4 +348,23 @@ footer p {
   left: 50%;
   color: white;
   font-size: 12px;
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+  .bodypictureback {
+    background: url('../photos/vertnewYork.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1101px) {
+  #intro a {
+    top: 60%;
+    left: 16%;
+  }
 }
