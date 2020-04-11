@@ -48,6 +48,8 @@ body {
   margin: 0px;
   padding: 2px 8px 8px 8px;
   color: white;
+  width: auto;
+  border: 5px solid red;
 }
 #topRect i {
   display: none;
@@ -416,6 +418,11 @@ footer p {
 @media only screen and (min-height: 550px) and (max-width: 1101px) {
   #intro a {
     top: 47%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #topRect h1 {
+    font-size: 22px;
   }
 }
 
