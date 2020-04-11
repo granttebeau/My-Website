@@ -2,12 +2,12 @@
 
 body {
   margin: 0px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .bodypictureback {
   background: url('../photos/newYork.jpg');
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
 }
