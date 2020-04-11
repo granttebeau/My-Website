@@ -82,7 +82,7 @@ body {
   position: fixed;
   width: 35%;
   font-size: 16px;
-  top: 50%;
+  top: 53%;
   left: 15%;
 }
 
@@ -91,6 +91,7 @@ body {
   background-color: #dedede;
   height: auto;
   width: auto;
+  overflow: hidden;
 }
 #aboutme-funfacts {
   font-family: 'Open Sans', sans-serif;
@@ -162,6 +163,7 @@ body {
 }
 .darkgraybackground {
   background-color: #696969;
+  overflow: hidden;
 }
 
 
@@ -374,19 +376,51 @@ footer p {
     width: 100%;
     overflow: hidden;
   }
+
+  #topRect h1 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 1101px) {
   #intro a {
     top: 55%;
-    left: 14%;
+    left: 10%;
     font-size: 12px;
   }
   #intro h2 {
-    font-size: 40px;
+    font-size: 30px;
+    width: auto;
+    left: 17%;
+    top: 34%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #intro h2 {
+    left: 13%;
+  }
+  #topRect h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-height: 600px) {
+  #intro a {
+    font-size: 12px;
+    top: 54%;
+    left: 10%;
+  }
+  #intro h2 {
+    font-size: 30px;
+    width: auto;
+  }
+}
+@media only screen and (min-height: 550px) and (max-width: 1101px) {
+  #intro a {
+    top: 47%;
   }
 }
 
-@media only screen and (max-width: 970px) {
+/* controls the menu button */
+@media only screen and (max-width: 1000px) {
   #topRect i {
     display: block;
     color: white;
