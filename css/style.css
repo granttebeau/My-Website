@@ -49,7 +49,6 @@ body {
   padding: 2px 8px 8px 8px;
   color: white;
   width: auto;
-  border: 5px solid red;
 }
 #topRect i {
   display: none;
@@ -424,6 +423,9 @@ footer p {
   #topRect h1 {
     font-size: 22px;
   }
+  #topRect i {
+    padding: 10px;
+  }
 }
 
 /* controls the menu button */
@@ -431,11 +433,10 @@ footer p {
   #topRect i {
     display: block;
     color: white;
-    padding: 0px;
+    padding: 5px;
     top: 100px;
     margin: 10px 25px;
     font-size: 30px;
-    padding: 10px;
     text-align: center;
     cursor: pointer;
   }
@@ -461,7 +462,6 @@ footer p {
   #topRect-right {
     position: relative;
     display: block;
-    width: 20%;
     padding: 14px 16px 0px 16px;
   }
   #topRect i:hover {
