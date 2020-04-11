@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
 body {
   margin: 0px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .bodypictureback {
   background: url('../photos/newYork.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  overflow: hidden;
 }
 
 /* styling for the top navigation bar */
@@ -370,12 +372,17 @@ footer p {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    overflow: hidden;
   }
 }
 @media only screen and (max-width: 1101px) {
   #intro a {
-    top: 60%;
-    left: 16%;
+    top: 55%;
+    left: 14%;
+    font-size: 12px;
+  }
+  #intro h2 {
+    font-size: 40px;
   }
 }
 
