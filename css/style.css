@@ -426,6 +426,22 @@ footer p {
   #topRect i {
     padding: 10px;
   }
+
+  #contactme h3 {
+    font-size: 14px;
+    left: 15%;
+    max-width: 60%;
+  }
+  #contactme ul {
+    left: 5%;
+    top: 44%;
+    max-width: 60%;
+  }
+  #contactme li {
+    font-size: 12px;
+    left: 0%;
+    margin: 10px 15px;
+  }
 }
 
 /* controls the menu button */
