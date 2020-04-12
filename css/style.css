@@ -301,7 +301,6 @@ body {
   color: black;
   text-align: center;
   overflow: hidden;
-  border: 5px solid red;
 }
 #contactme h3 {
   position: absolute;
@@ -429,9 +428,9 @@ footer p {
   }
 
   #contactme h3 {
-    font-size: 14px;
+    font-size: 8px;
     left: 15%;
-    max-width: 70%;
+    width: auto;
     margin: 10px 0px;
   }
   #contactme ul {
@@ -440,7 +439,7 @@ footer p {
     max-width: 70%;
   }
   #contactme li {
-    font-size: 12px;
+    font-size: 8px;
     left: 0%;
   }
 }
