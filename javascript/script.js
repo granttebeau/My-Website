@@ -8,7 +8,7 @@ var curPosition = window.pageYOffset;
   if (prevPosition > curPosition || curPosition <= 0) {
     document.getElementById("topRect").style.top = "0";
   } else {
-    document.getElementById("topRect").style.top = "-75px";
+    document.getElementById("topRect").style.top = "-500px";
   }
   prevPosition = curPosition;
 }

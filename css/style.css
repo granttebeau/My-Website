@@ -90,8 +90,6 @@ body {
 /* styling for the about me page */
 .graybackground {
   background-color: #dedede;
-  height: auto;
-  width: auto;
   overflow: hidden;
 }
 #aboutme-funfacts {
@@ -296,23 +294,25 @@ body {
 
 /* styling for the contact me page */
 #contactme {
-  background-color: #eee;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  padding: 315px;
+  height: 650px;
+  width: auto;
   color: black;
   text-align: center;
+  overflow: hidden;
 }
 #contactme h3 {
   position: absolute;
   max-width: 1300px;
-  left: 50px;
+  left: 5%;
   font-size: 36px;
+  overflow: hidden;
 }
 #contactme ul {
   position: absolute;
-  top: 295px;
-  left: 23%;
+  top: 47%;
+  left: 22%;
 }
 #contactme li {
   list-style: none;
@@ -369,7 +369,7 @@ footer p {
 
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 870px) {
   .bodypictureback {
     background: url('../photos/vertnewYork.jpg');
     background-size: cover;
@@ -471,4 +471,37 @@ footer p {
     display: block;
   }
 
+  #contactme h3 {
+    font-size: 26px;
+    left: 4%;
+  }
+  #contactme ul {
+    left: 10%;
+  }
+  #contactme li {
+    font-size: 27px;
+    margin: 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  #contactme {
+    height: 600px;
+  }
+  #contactme h3 {
+    font-size: 18px;
+    left: 15%;
+    max-width: 60%;
+  }
+  #contactme ul {
+    left: 5%;
+    top: 44%;
+    max-width: 60%;
+  }
+  #contactme li {
+    font-size: 20px;
+    left: 0%;
+    margin: 10px 15px;
+  }
 }
