@@ -427,21 +427,6 @@ footer p {
     padding: 10px;
   }
 
-  #contactme h3 {
-    font-size: 8px;
-    left: 15%;
-    width: auto;
-    margin: 10px 0px;
-  }
-  #contactme ul {
-    left: 5%;
-    top: 44%;
-    max-width: 70%;
-  }
-  #contactme li {
-    font-size: 8px;
-    left: 0%;
-  }
 }
 
 /* controls the menu button */
@@ -506,17 +491,17 @@ footer p {
     height: 600px;
   }
   #contactme h3 {
-    font-size: 18px;
+    font-size: 15px;
     left: 15%;
     max-width: 60%;
   }
   #contactme ul {
     left: 5%;
-    top: 44%;
+    top: 42%;
     max-width: 60%;
   }
   #contactme li {
-    font-size: 20px;
+    font-size: 17px;
     left: 0%;
     margin: 10px 15px;
   }
