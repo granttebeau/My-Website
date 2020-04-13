@@ -259,7 +259,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   position: relative;
-  padding: 125px;
+  padding: 40px;
   text-align: center;
   font-size: 18px;
 }
@@ -268,18 +268,20 @@ body {
   position: relative;
   padding: 250px;
   text-align: center;
-  border: 1px solid black;
+  border-top: 1px solid black;
 }
 #pp-list h2 {
   position: absolute;
-  top: 60px;
+  top: 8%;
   font-size: 50px;
+  left: 56%;
 }
 #pp-list p {
   position: absolute;
-  top: 160px;
+  top: 32%;
   font-size: 20px;
-  width: 750px;
+  width: 54%;
+  left: 39%;
 }
 #pp-list a {
   text-decoration: none;
@@ -289,6 +291,8 @@ body {
   height: auto;
   width: 25%;
   border: 1px solid black;
+  top: 10%;
+  left: 4%;
 }
 
 
@@ -381,6 +385,16 @@ footer p {
   #topRect h1 {
     font-size: 30px;
   }
+
+  #pp-list h2 {
+    left: 53%;
+  }
+  #pp-list p {
+    font-size: 16px;
+  }
+  #pp-list img {
+    top: 20%;
+  }
 }
 @media only screen and (max-width: 1101px) {
   #intro a {
@@ -395,14 +409,7 @@ footer p {
     top: 34%;
   }
 }
-@media only screen and (max-width: 650px) {
-  #intro h2 {
-    left: 13%;
-  }
-  #topRect h1 {
-    font-size: 30px;
-  }
-}
+
 @media only screen and (max-height: 600px) {
   #intro a {
     font-size: 12px;
@@ -419,14 +426,23 @@ footer p {
     top: 47%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #topRect h1 {
     font-size: 22px;
   }
   #topRect i {
     padding: 10px;
   }
+  #pp-header {
+    font-size: 6px;
+  }
 
+}
+
+@media only screen and (max-width: 1250px) {
+  #pp-list h2 {
+    font-size: 40px;
+  }
 }
 
 /* controls the menu button */
@@ -487,6 +503,12 @@ footer p {
 
 @media only screen and (max-width: 700px) {
 
+  #intro h2 {
+    left: 13%;
+  }
+  #topRect h1 {
+    font-size: 30px;
+  }
   #contactme {
     height: 660px;
   }
@@ -508,5 +530,24 @@ footer p {
     left: 0%;
     margin: 10px 20px;
     padding: 6px 12px;
+  }
+
+  #pp-header {
+    font-size: 10px;
+  }
+  #pp-list {
+    padding: 200px;
+  }
+  #pp-list h2 {
+    left: 50%;
+    font-size: 30px;
+  }
+  #pp-list p {
+    font-size: 11px;
+    top: 27%;
+  }
+  #pp-list img {
+    width: 27%;
+    top: 29%;
   }
 }
