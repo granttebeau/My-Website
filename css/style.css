@@ -433,10 +433,6 @@ footer p {
   #topRect i {
     padding: 10px;
   }
-  #pp-header {
-    font-size: 6px;
-  }
-
 }
 
 @media only screen and (max-width: 1250px) {
@@ -539,12 +535,13 @@ footer p {
     padding: 200px;
   }
   #pp-list h2 {
-    left: 50%;
+    left: 46%;
     font-size: 30px;
   }
   #pp-list p {
     font-size: 11px;
     top: 27%;
+    left: 37%
   }
   #pp-list img {
     width: 27%;
