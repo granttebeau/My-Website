@@ -488,22 +488,20 @@ footer p {
 @media only screen and (max-width: 700px) {
 
   #contactme {
-    height: 675px;
+    height: 600px;
   }
   #contactme h3 {
     font-size: 15px;
     left: 15%;
     max-width: 60%;
     margin: 40px 0px;
-    border: 5px solid red;
 
   }
   #contactme ul {
-    left: 1%;
+    left: 0%;
     top: 42%;
     max-width: 76%;
-    margin: 40px 10px;
-    border: 5px solid red;
+    margin: 40px 0px;
   }
   #contactme li {
     font-size: 14px;
