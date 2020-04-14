@@ -533,7 +533,7 @@ footer p {
     overflow: hidden;
   }
   #pp-list {
-    padding: 180px;
+    padding: 190px;
   }
   #pp-list h2 {
     left: 51%;
@@ -542,7 +542,7 @@ footer p {
   }
   #pp-list p {
     font-size: 11px;
-    top: 27%;
+    top: 25%;
     left: 39%;
     max-width: 50%;
     border: 5px solid red;
