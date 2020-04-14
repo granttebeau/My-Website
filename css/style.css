@@ -92,108 +92,73 @@ body {
   background-color: #dedede;
   overflow: hidden;
 }
-#aboutme-funfacts {
+#aboutme-leftpic {
   font-family: 'Open Sans', sans-serif;
   color: black;
   position: relative;
   padding: 400px;
   text-align: center;
+  overflow: hidden;
 }
-#aboutme-funfacts h2 {
+#aboutme-leftpic h2 {
   font-size: 40px;
   position: absolute;
-  top: 225px;
-  left: 770px;
+  top: 28%;
+  left: 56%;
 }
-#aboutme-funfacts p {
-  text-align: center;
+#aboutme-leftpic p {
   font-size: 16px;
   position: absolute;
-  top: 305px;
-  left: 690px;
+  top: 39%;
+  left: 49%;
   line-height: 35px;
 }
-#aboutme-funfacts img {
+#aboutme-leftpic img {
   position: absolute;
   height: auto;
   width: 28%;
-  top: 95px;
-  left: 175px;
-}
-#aboutme-funfacts .guitar-caption {
-  font-size: 10px;
-  color: #999;
-  top: 650px;
-  left: 250px;
+  top: 12%;
+  left: 12%;
 }
 
 
-#aboutme-technical {
+
+#aboutme-rightpic {
   font-family: 'Open Sans', sans-serif;
   position: relative;
   padding: 400px;
   color: white;
   text-align: center;
 }
-#aboutme-technical h2 {
+#aboutme-rightpic h2 {
   position: absolute;
-  top: 245px;
-  left: 215px;
+  top: 28%;
+  left: 16%;
   font-size: 40px;
 }
-#aboutme-technical p {
+#aboutme-rightpic p {
   position: absolute;
-  width: auto;
-  top: 325px;
-  left: 90px;
+  top: 39%;
+  left: 8%;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 35px;
 }
-#aboutme-technical a {
+#aboutme-rightpic a {
   color: #ccc;
   text-decoration: none;
 }
-#aboutme-technical img {
+#aboutme-rightpic img {
   position: absolute;
   height: auto;
   width: 28%;
-  top: 95px;
-  left: 850px;
+  top: 12%;
+  left: 61%;
 }
 .darkgraybackground {
   background-color: #696969;
   overflow: hidden;
 }
 
-
-#aboutme-business {
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  padding: 400px;
-  color: black;
-  text-align: center;
-}
-#aboutme-business h2 {
-  position: absolute;
-  top: 225px;
-  left: 790px;
-  font-size: 40px;
-}
-#aboutme-business p {
-  text-align: center;
-  font-size: 16px;
-  position: absolute;
-  top: 305px;
-  left: 640px;
-  line-height: 35px;
-}
-#aboutme-business img {
-  position: absolute;
-  height: auto;
-  width: 28%;
-  top: 95px;
-  left: 175px;
-}
 
 
 #aboutme-personality {
@@ -207,9 +172,8 @@ body {
 #aboutme-personality h1 {
   position: absolute;
   font-size: 50px;
-  top: 20px;
-  left: 475px;
-  opacity: 1 !important;
+  top: 2%;
+  left: 33%;
 }
 #aboutme-personality p {
   position: absolute;
@@ -243,7 +207,7 @@ body {
   color: white;
   z-index: 9999;
   font-size: 13px;
-  width: 200px
+  width: 10%;
 }
 #images a {
   position: absolute;
@@ -253,6 +217,8 @@ body {
   font-size: 13px;
   width: auto;
 }
+
+
 
 /* styling for the personal projects page */
 #pp-header {
