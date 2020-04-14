@@ -530,9 +530,11 @@ footer p {
 
   #pp-header {
     font-size: 10px;
+    overflow: hidden;
   }
   #pp-list {
     padding: 200px;
+    border: 5px solid red;
   }
   #pp-list h2 {
     left: 45%;
@@ -541,7 +543,8 @@ footer p {
   #pp-list p {
     font-size: 11px;
     top: 27%;
-    left: 37%
+    left: 41%;
+    max-width: 38%;
   }
   #pp-list img {
     width: 27%;
