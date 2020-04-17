@@ -110,7 +110,7 @@ body {
   font-size: 16px;
   position: absolute;
   top: 39%;
-  left: 49%;
+  left: 53%;
   line-height: 35px;
 }
 #aboutme-leftpic img {
@@ -339,6 +339,7 @@ footer p {
 
 
 
+/* media query for changing the background picture and some other small things */
 @media only screen and (max-width: 870px) {
   .bodypictureback {
     background: url('../photos/vertnewYork.jpg');
@@ -362,20 +363,10 @@ footer p {
     top: 20%;
   }
 }
-@media only screen and (max-width: 1101px) {
-  #intro a {
-    top: 55%;
-    left: 10%;
-    font-size: 12px;
-  }
-  #intro h2 {
-    font-size: 30px;
-    width: auto;
-    left: 17%;
-    top: 34%;
-  }
-}
 
+
+
+/* both of the two media queries below update the intro for screen height changes */
 @media only screen and (max-height: 600px) {
   #intro a {
     font-size: 12px;
@@ -392,20 +383,32 @@ footer p {
     top: 47%;
   }
 }
-@media only screen and (max-width: 500px) {
-  #topRect h1 {
-    font-size: 22px;
+
+
+@media only screen and (max-width: 1200px) {
+  #aboutme-leftpic {
+    padding: 350px;
   }
-  #topRect i {
-    padding: 10px;
+  #aboutme-leftpic h2 {
+    font-size: 30px;
+  }
+  #aboutme-leftpic p {
+    font-size: 14px;
+    left: 51%;
+  }
+
+  #aboutme-rightpic {
+    padding: 350px;
+  }
+  #aboutme-rightpic h2 {
+    font-size: 30px;
+  }
+  #aboutme-rightpic p {
+    font-size: 14px;
+    left: 7%;
   }
 }
 
-@media only screen and (max-width: 1250px) {
-  #pp-list h2 {
-    font-size: 40px;
-  }
-}
 
 /* controls the menu button */
 @media only screen and (max-width: 1000px) {
@@ -462,15 +465,103 @@ footer p {
     font-size: 27px;
     margin: 10px 15px;
   }
+  #intro a {
+    top: 55%;
+    left: 10%;
+    font-size: 12px;
+  }
+  #intro h2 {
+    font-size: 30px;
+    width: auto;
+    left: 17%;
+    top: 34%;
+  }
+  #pp-list h2 {
+    font-size: 40px;
+  }
+
+  #aboutme-leftpic {
+    padding: 300px;
+  }
+  #aboutme-leftpic h2 {
+    font-size: 26px;
+    left: 56%;
+  }
+  #aboutme-leftpic p {
+    font-size: 12px;
+    left: 51%;
+  }
+
+  #aboutme-rightpic {
+    padding: 300px;
+  }
+  #aboutme-rightpic h2 {
+    font-size: 26px;
+  }
+  #aboutme-rightpic p {
+    font-size: 12px;
+    left: 6%;
+  }
+  #aboutme-rightpic img {
+    left: 63%;
+    width: 23%;
+    top: 16%;
+  }
 }
 
+@media only screen and (max-width: 825px) {
+  #aboutme-leftpic {
+    padding: 270px 10px;
+  }
+  #aboutme-leftpic h2 {
+    font-size: 24px;
+    left: 36%;
+    top: 5%;
+  }
+  #aboutme-leftpic p {
+    left: 28%;
+    top: 16%;
+    max-width: 90%;
+    line-height: 30px;
+  }
+  #aboutme-leftpic img {
+    width: 20%;
+    top: 54%;
+    left: 40%;
+  }
+
+  #aboutme-rightpic {
+    padding: 270px 10px;
+  }
+  #aboutme-rightpic h2 {
+    font-size: 24px;
+    left: 36%;
+    top: 5%;
+  }
+  #aboutme-rightpic p {
+    left: 25%;
+    top: 16%;
+    max-width: 90%;
+    line-height: 30px;
+  }
+  #aboutme-rightpic img {
+    width: 20%;
+    top: 52%;
+    left: 40%;
+  }
+}
+
+/* for a phone screen size */
 @media only screen and (max-width: 700px) {
 
   #intro h2 {
     left: 13%;
   }
   #topRect h1 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  #topRect i {
+    padding: 10px;
   }
   #contactme {
     height: 620px;
@@ -514,5 +605,42 @@ footer p {
   #pp-list img {
     width: 27%;
     top: 29%;
+  }
+
+
+  #aboutme-leftpic {
+    padding: 220px 10px;
+  }
+  #aboutme-leftpic h2 {
+    font-size: 20px;
+    left: 33%;
+    top: 5%;
+  }
+  #aboutme-leftpic p {
+    font-size: 10px;
+    left: 22%;
+    line-height: 25px;
+  }
+  #aboutme-leftpic img {
+    width: 18%;
+    left: 41%;
+  }
+
+  #aboutme-rightpic {
+    padding: 220px 10px;
+  }
+  #aboutme-rightpic h2 {
+    font-size: 20px;
+    left: 33%;
+    top: 5%;
+  }
+  #aboutme-rightpic p {
+    font-size: 10px;
+    left: 19%;
+    line-height: 25px;
+  }
+  #aboutme-rightpic img {
+    width: 18%;
+    left: 41%;
   }
 }
