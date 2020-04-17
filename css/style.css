@@ -274,9 +274,9 @@ body {
 }
 #contactme h3 {
   position: absolute;
-  max-width: 1300px;
-  left: 5%;
-  font-size: 36px;
+  max-width: 50%;
+  left: 24%;
+  font-size: 26px;
   overflow: hidden;
 }
 #contactme ul {
@@ -451,11 +451,12 @@ footer p {
   }
 
   #contactme h3 {
-    font-size: 26px;
-    left: 4%;
+    font-size: 20px;
+    left: 20%;
+    top: 5%;
   }
   #contactme ul {
-    left: 10%;
+    left: 17%;
   }
   #contactme li {
     font-size: 27px;
@@ -472,7 +473,7 @@ footer p {
     font-size: 24px;
   }
   #contactme {
-    height: 660px;
+    height: 620px;
   }
   #contactme h3 {
     font-size: 15px;
@@ -489,7 +490,6 @@ footer p {
   }
   #contactme li {
     font-size: 14px;
-    left: 0%;
     margin: 10px 20px;
     padding: 6px 12px;
   }
