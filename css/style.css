@@ -283,12 +283,13 @@ body {
   position: absolute;
   top: 47%;
   left: 22%;
+  width: 50%;
 }
 #contactme li {
   list-style: none;
-  margin: 10px 30px;
+  margin: 20px 10px;
   display: inline-block;
-  font-size: 40px;
+  font-size: 25px;
   padding: 12px 21px;
   border: 1px solid black;
   border-radius: 50%;
@@ -455,19 +456,19 @@ footer p {
 
   #contactme h3 {
     font-size: 20px;
-    left: 20%;
+    left: 19%;
     top: 5%;
   }
   #contactme ul {
-    left: 17%;
+    left: 16%;
+    top: 42%;
   }
   #contactme li {
-    font-size: 27px;
-    margin: 10px 15px;
+    font-size: 20px;
+    margin: 5px 15px;
   }
   #intro a {
     top: 55%;
-    left: 10%;
     font-size: 12px;
   }
   #intro h2 {
@@ -574,10 +575,9 @@ footer p {
 
   }
   #contactme ul {
-    left: 0%;
+    left: 6%;
     top: 42%;
-    max-width: 76%;
-    margin: 40px 0px;
+    width: 65%;
   }
   #contactme li {
     font-size: 14px;
