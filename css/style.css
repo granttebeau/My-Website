@@ -340,7 +340,7 @@ footer p {
 
 
 
-/* media query for changing the background picture and some other small things */
+/* media query for changing the background picture and some other things */
 @media only screen and (max-width: 870px) {
   .bodypictureback {
     background: url('../photos/vertnewYork.jpg');
@@ -367,26 +367,14 @@ footer p {
 
 
 
-/* both of the two media queries below update the intro for screen height changes */
-@media only screen and (max-height: 600px) {
-  #intro a {
-    font-size: 12px;
-    top: 54%;
-    left: 10%;
-  }
-  #intro h2 {
-    font-size: 30px;
-    width: auto;
-  }
-}
-@media only screen and (min-height: 550px) and (max-width: 1101px) {
-  #intro a {
-    top: 47%;
-  }
-}
-
-
 @media only screen and (max-width: 1200px) {
+  #intro h2 {
+    font-size: 40px;
+  }
+  #intro a {
+    font-size: 14px;
+    top: 48%;
+  }
   #aboutme-leftpic {
     padding: 350px;
   }
@@ -468,13 +456,14 @@ footer p {
     margin: 5px 15px;
   }
   #intro a {
-    top: 55%;
+    top: 45%;
+    width: 30%;
+    left: 14%;
     font-size: 12px;
   }
   #intro h2 {
     font-size: 30px;
     width: auto;
-    left: 17%;
     top: 34%;
   }
   #pp-list h2 {
@@ -552,12 +541,13 @@ footer p {
   }
 }
 
-/* for a phone screen size */
-@media only screen and (max-width: 700px) {
+/* for a small screen size */
+@media only screen and (max-width: 600px) {
 
   #intro h2 {
     left: 13%;
   }
+
   #topRect h1 {
     font-size: 22px;
   }
@@ -613,12 +603,12 @@ footer p {
   }
   #aboutme-leftpic h2 {
     font-size: 20px;
-    left: 33%;
+    left: 27%;
     top: 5%;
   }
   #aboutme-leftpic p {
     font-size: 10px;
-    left: 22%;
+    left: 16%;
     line-height: 25px;
   }
   #aboutme-leftpic img {
@@ -631,16 +621,54 @@ footer p {
   }
   #aboutme-rightpic h2 {
     font-size: 20px;
-    left: 33%;
+    left: 29%;
     top: 5%;
   }
   #aboutme-rightpic p {
     font-size: 10px;
-    left: 19%;
+    left: 14%;
     line-height: 25px;
   }
   #aboutme-rightpic img {
     width: 18%;
     left: 41%;
+  }
+}
+
+/* for a phone screen size */
+@media only screen and (max-width: 450px) {
+  #aboutme-leftpic {
+    padding: 250px 10px;
+  }
+  #aboutme-leftpic h2 {
+    font-size: 20px;
+    left: 15%;
+    top: 5%;
+  }
+  #aboutme-leftpic p {
+    font-size: 9px;
+    left: 10%;
+    line-height: 25px;
+  }
+  #aboutme-leftpic img {
+    width: 18%;
+    top: 60%;
+    left: 41%;
+  }
+}
+
+
+/* updates intro screen height changes */
+@media only screen and (max-height: 600px) {
+  #intro a {
+    font-size: 12px;
+    width: 30%;
+    top: 59%;
+    left: 19%;
+  }
+  #intro h2 {
+    font-size: 35px;
+    left: 19%;
+    width: auto;
   }
 }
