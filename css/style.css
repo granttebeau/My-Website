@@ -41,7 +41,7 @@ body {
   background-color: #2b2b2b;
   color: white;
 }
-#dropdown-content {
+.dropdown-content {
   margin: 10px;
 }
 #topRect h1 {
@@ -92,7 +92,7 @@ body {
   background-color: #dedede;
   overflow: hidden;
 }
-#aboutme-leftpic {
+.aboutme-leftpic {
   font-family: 'Open Sans', sans-serif;
   color: black;
   position: relative;
@@ -100,20 +100,20 @@ body {
   text-align: center;
   overflow: hidden;
 }
-#aboutme-leftpic h2 {
+.aboutme-leftpic h2 {
   font-size: 40px;
   position: absolute;
   top: 28%;
   left: 56%;
 }
-#aboutme-leftpic p {
+.aboutme-leftpic p {
   font-size: 16px;
   position: absolute;
   top: 39%;
   left: 53%;
   line-height: 35px;
 }
-#aboutme-leftpic img {
+.aboutme-leftpic img {
   position: absolute;
   height: auto;
   width: 28%;
@@ -122,32 +122,31 @@ body {
 }
 
 
-
-#aboutme-rightpic {
+.aboutme-rightpic {
   font-family: 'Open Sans', sans-serif;
   position: relative;
   padding: 400px;
   color: white;
   text-align: center;
 }
-#aboutme-rightpic h2 {
+.aboutme-rightpic h2 {
   position: absolute;
   top: 28%;
   left: 16%;
   font-size: 40px;
 }
-#aboutme-rightpic p {
+.aboutme-rightpic p {
   position: absolute;
   top: 39%;
   left: 8%;
   font-size: 16px;
   line-height: 35px;
 }
-#aboutme-rightpic a {
+.aboutme-rightpic a {
   color: #ccc;
   text-decoration: none;
 }
-#aboutme-rightpic img {
+.aboutme-rightpic img {
   position: absolute;
   height: auto;
   width: 28%;
@@ -165,7 +164,7 @@ body {
   background-color: #aaa;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  padding: 435px;
+  height: 800px;
   color: black;
   text-align: center;
 }
@@ -175,47 +174,32 @@ body {
   top: 2%;
   left: 33%;
 }
-#aboutme-personality p {
-  position: absolute;
-  font-size: 10px;
-  top: 850px;
-  left: 650px;
-  opacity: 1;
-}
 #aboutme-personality img {
-  position: absolute;
   height: auto;
   width: 34%;
-  border: 1px solid black;
-  transition: .5s;
+  float: left;
+  width: 33.33%;
+  padding: 0px;
 }
-#images img:hover {
-  filter: blur(3px) brightness(60%);
-}
-#images :not(img) {
+#toprow {
   position: absolute;
-  opacity: 0;
-  transition: .5s
+  left: 0%;
+  top: 16%;
 }
-#images:hover :not(img) {
-  position: absolute;
-  opacity: 1;
-  transition: .5s
+#toprow::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-#images p {
+#bottomrow {
   position: absolute;
-  color: white;
-  z-index: 9999;
-  font-size: 13px;
-  width: 10%;
+  left: 0%;
+  top: 57%;
 }
-#images a {
-  position: absolute;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  font-size: 13px;
-  width: auto;
+#bottomrow::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
@@ -229,30 +213,30 @@ body {
   text-align: center;
   font-size: 18px;
 }
-#pp-list {
+.pp-list {
   font-family: 'Open Sans', sans-serif;
   position: relative;
   padding: 250px;
   text-align: center;
   border-top: 1px solid black;
 }
-#pp-list h2 {
+.pp-list h2 {
   position: absolute;
   top: 8%;
   font-size: 50px;
   left: 56%;
 }
-#pp-list p {
+.pp-list p {
   position: absolute;
   top: 32%;
   font-size: 20px;
   width: 54%;
   left: 39%;
 }
-#pp-list a {
+.pp-list a {
   text-decoration: none;
 }
-#pp-list img {
+.pp-list img {
   position: absolute;
   height: auto;
   width: 25%;
@@ -298,23 +282,23 @@ body {
 #contactme a {
   color: black;
 }
-#contactme a .github:hover {
+#contactme a #github:hover {
   color: #FF7F50;
   border: 1px solid #FF7F50;
 }
-#contactme a .linkedin:hover {
+#contactme a #linkedin:hover {
   color: #0072b1;
   border: 1px solid #0072b1;
 }
-#contactme a .facebook:hover {
+#contactme a #facebook:hover {
   color: #4267B2;
   border: 1px solid #4267B2;
 }
-#contactme a .instagram:hover {
+#contactme a #instagram:hover {
   color: #833AB4;
   border: 1px solid #FD1D1D;
 }
-#contactme a .twitter:hover {
+#contactme a #twitter:hover {
   color: #00acee;
   border: 1px solid #00acee;
 }
@@ -354,13 +338,13 @@ footer p {
     font-size: 30px;
   }
 
-  #pp-list h2 {
+  .pp-list h2 {
     left: 53%;
   }
-  #pp-list p {
+  .pp-list p {
     font-size: 16px;
   }
-  #pp-list img {
+  .pp-list img {
     top: 20%;
   }
 }
@@ -375,26 +359,30 @@ footer p {
     font-size: 14px;
     top: 48%;
   }
-  #aboutme-leftpic {
+  .aboutme-leftpic {
     padding: 350px;
   }
-  #aboutme-leftpic h2 {
+  .aboutme-leftpic h2 {
     font-size: 30px;
   }
-  #aboutme-leftpic p {
+  .aboutme-leftpic p {
     font-size: 14px;
     left: 51%;
   }
 
-  #aboutme-rightpic {
+  .aboutme-rightpic {
     padding: 350px;
   }
-  #aboutme-rightpic h2 {
+  .aboutme-rightpic h2 {
     font-size: 30px;
   }
-  #aboutme-rightpic p {
+  .aboutme-rightpic p {
     font-size: 14px;
     left: 7%;
+  }
+
+  #aboutme-personality h1 {
+    left: 30%;
   }
 }
 
@@ -427,7 +415,7 @@ footer p {
     width: 40%;
     float: left;
   }
-  #dropdown-content {
+  .dropdown-content {
     color: black;
   }
   #topRect-right {
@@ -466,75 +454,79 @@ footer p {
     width: auto;
     top: 34%;
   }
-  #pp-list h2 {
+  .pp-list h2 {
     font-size: 40px;
   }
 
-  #aboutme-leftpic {
+  .aboutme-leftpic {
     padding: 300px;
   }
-  #aboutme-leftpic h2 {
+  .aboutme-leftpic h2 {
     font-size: 26px;
     left: 56%;
   }
-  #aboutme-leftpic p {
+  .aboutme-leftpic p {
     font-size: 12px;
     left: 51%;
   }
 
-  #aboutme-rightpic {
+  .aboutme-rightpic {
     padding: 300px;
   }
-  #aboutme-rightpic h2 {
+  .aboutme-rightpic h2 {
     font-size: 26px;
   }
-  #aboutme-rightpic p {
+  .aboutme-rightpic p {
     font-size: 12px;
     left: 6%;
   }
-  #aboutme-rightpic img {
+  .aboutme-rightpic img {
     left: 63%;
     width: 23%;
     top: 16%;
   }
+  #aboutme-personality h1 {
+    font-size: 40px;
+    left: 28%;
+  }
 }
 
 @media only screen and (max-width: 825px) {
-  #aboutme-leftpic {
+  .aboutme-leftpic {
     padding: 270px 10px;
   }
-  #aboutme-leftpic h2 {
+  .aboutme-leftpic h2 {
     font-size: 24px;
-    left: 36%;
+    left: 34%;
     top: 5%;
   }
-  #aboutme-leftpic p {
-    left: 28%;
-    top: 16%;
-    max-width: 90%;
-    line-height: 30px;
-  }
-  #aboutme-leftpic img {
-    width: 20%;
-    top: 54%;
-    left: 40%;
-  }
-
-  #aboutme-rightpic {
-    padding: 270px 10px;
-  }
-  #aboutme-rightpic h2 {
-    font-size: 24px;
-    left: 36%;
-    top: 5%;
-  }
-  #aboutme-rightpic p {
+  .aboutme-leftpic p {
     left: 25%;
     top: 16%;
     max-width: 90%;
     line-height: 30px;
   }
-  #aboutme-rightpic img {
+  .aboutme-leftpic img {
+    width: 20%;
+    top: 54%;
+    left: 40%;
+  }
+
+  .aboutme-rightpic {
+    padding: 270px 10px;
+  }
+  .aboutme-rightpic h2 {
+    font-size: 24px;
+    left: 36%;
+    top: 5%;
+  }
+  .aboutme-rightpic p {
+    left: 25%;
+    top: 16%;
+    max-width: 90%;
+    line-height: 30px;
+  }
+  .aboutme-rightpic img {
     width: 20%;
     top: 52%;
     left: 40%;
@@ -579,100 +571,108 @@ footer p {
     font-size: 10px;
     overflow: hidden;
   }
-  #pp-list {
+  .pp-list {
     padding: 185px;
   }
-  #pp-list h2 {
+  .pp-list h2 {
     left: 49%;
     font-size: 24px;
   }
-  #pp-list p {
+  .pp-list p {
     font-size: 10px;
     top: 23%;
     left: 39%;
     max-width: 50%;
   }
-  #pp-list img {
+  .pp-list img {
     width: 27%;
     top: 29%;
   }
 
 
-  #aboutme-leftpic {
+  .aboutme-leftpic {
     padding: 220px 10px;
   }
-  #aboutme-leftpic h2 {
+  .aboutme-leftpic h2 {
     font-size: 20px;
     left: 27%;
     top: 5%;
   }
-  #aboutme-leftpic p {
+  .aboutme-leftpic p {
     font-size: 10px;
     left: 16%;
     line-height: 25px;
   }
-  #aboutme-leftpic img {
+  .aboutme-leftpic img {
     width: 18%;
     left: 41%;
   }
 
-  #aboutme-rightpic {
+  .aboutme-rightpic {
     padding: 220px 10px;
   }
-  #aboutme-rightpic h2 {
+  .aboutme-rightpic h2 {
     font-size: 20px;
     left: 29%;
     top: 5%;
   }
-  #aboutme-rightpic p {
+  .aboutme-rightpic p {
     font-size: 10px;
     left: 14%;
     line-height: 25px;
   }
-  #aboutme-rightpic img {
+  .aboutme-rightpic img {
     width: 18%;
     left: 41%;
+  }
+
+  #aboutme-personality h1 {
+    left: 24%;
+    font-size: 30px;
   }
 }
 
 /* for a phone screen size */
 @media only screen and (max-width: 450px) {
-  #aboutme-leftpic {
+  .aboutme-leftpic {
     padding: 200px 10px;
   }
-  #aboutme-leftpic h2 {
+  .aboutme-leftpic h2 {
     font-size: 20px;
     left: 15%;
     top: 5%;
   }
-  #aboutme-leftpic p {
+  .aboutme-leftpic p {
     font-size: 9px;
     left: 10%;
     line-height: 25px;
   }
-  #aboutme-leftpic img {
+  .aboutme-leftpic img {
     width: 18%;
     top: 60%;
     left: 41%;
   }
 
-  #aboutme-rightpic {
+  .aboutme-rightpic {
     padding: 200px 10px;
   }
-  #aboutme-rightpic h2 {
+  .aboutme-rightpic h2 {
     font-size: 20px;
     left: 15%;
     top: 5%;
   }
-  #aboutme-rightpic p {
+  .aboutme-rightpic p {
     font-size: 10px;
     left: 8%;
     line-height: 25px;
   }
-  #aboutme-rightpic img {
+  .aboutme-rightpic img {
     width: 18%;
     top: 60%;
     left: 41%;
+  }
+  #aboutme-personality h1 {
+    font-size: 22px;
   }
 }
 
