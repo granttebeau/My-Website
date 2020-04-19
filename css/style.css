@@ -568,7 +568,7 @@ footer p {
   }
   #contactme ul {
     left: 6%;
-    top: 42%;
+    top: 45%;
     width: 65%;
   }
   #contactme li {
@@ -693,6 +693,10 @@ footer p {
   }
   #aboutme-personality #bottomrow {
     top: 45%;
+  }
+
+  #contactme ul {
+    top: 50%;
   }
 }
 
