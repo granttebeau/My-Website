@@ -638,7 +638,7 @@ footer p {
 /* for a phone screen size */
 @media only screen and (max-width: 450px) {
   #aboutme-leftpic {
-    padding: 250px 10px;
+    padding: 200px 10px;
   }
   #aboutme-leftpic h2 {
     font-size: 20px;
@@ -651,6 +651,25 @@ footer p {
     line-height: 25px;
   }
   #aboutme-leftpic img {
+    width: 18%;
+    top: 60%;
+    left: 41%;
+  }
+
+  #aboutme-rightpic {
+    padding: 200px 10px;
+  }
+  #aboutme-rightpic h2 {
+    font-size: 20px;
+    left: 15%;
+    top: 5%;
+  }
+  #aboutme-rightpic p {
+    font-size: 10px;
+    left: 8%;
+    line-height: 25px;
+  }
+  #aboutme-rightpic img {
     width: 18%;
     top: 60%;
     left: 41%;
