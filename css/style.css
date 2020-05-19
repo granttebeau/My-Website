@@ -171,7 +171,7 @@ body {
   background-color: #aaa;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  height: 800px;
+  height: 850px;
   color: black;
   text-align: center;
 }
@@ -182,29 +182,18 @@ body {
   left: 33%;
 }
 #aboutme-personality img {
-  height: auto;
-  width: 34%;
+  position: absolute;
+  top: 16%;
   float: left;
-  width: 33.33%;
+  width: 100%;
+  height: auto;
   padding: 0px;
-  vertical-align: middle;
 }
 #aboutme-personality .images {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
-}
-#toprow {
-  position: absolute;
-  flex: 33.33%;
-  top: 19%;
-  left: 0%;
-}
-#bottomrow {
-  position: absolute;
-  flex: 33.33%;
-  top: 59%;
-  left: 0%;
+  padding: 0px;
+  height: 80%;
 }
 
 
@@ -648,7 +637,7 @@ footer p {
     font-size: 30px;
   }
   #aboutme-personality {
-    height: 450px;
+    height: 400px;
   }
 }
 
@@ -697,9 +686,6 @@ footer p {
 
   #aboutme-personality {
     height: 300px;
-  }
-  #aboutme-personality #bottomrow {
-    top: 50%;
   }
   #contactme ul {
     top: 50%;
