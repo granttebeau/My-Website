@@ -4,6 +4,7 @@
 body {
   margin: 0px;
   overflow: scroll;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .bodypictureback {
@@ -14,9 +15,13 @@ body {
   overflow: hidden;
 }
 
+
+
+
 /* styling for the top navigation bar */
+
+
 #topRect {
-  font-family: 'Open Sans', sans-serif;
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -53,6 +58,8 @@ body {
 #topRect i {
   display: none;
 }
+
+
 #topRect-right {
   float: right;
   margin: 0px;
