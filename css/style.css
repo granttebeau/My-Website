@@ -252,21 +252,23 @@ body {
 #contactme h3 {
   position: absolute;
   max-width: 50%;
-  left: 24%;
+  left: 50%;
+  transform: translate(-50%, -0%);
   font-size: 26px;
   overflow: hidden;
 }
 #contactme ul {
   position: absolute;
-  top: 47%;
-  left: 22%;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -0%);
   width: 50%;
 }
 #contactme li {
   list-style: none;
-  margin: 20px 10px;
+  margin: 5px 10px;
   display: inline-block;
-  font-size: 25px;
+  font-size: 24px;
   padding: 12px 21px;
   border: 1px solid black;
   border-radius: 50%;
@@ -339,6 +341,13 @@ footer p {
   }
   .pp-list img {
     top: 20%;
+  }
+
+  #contactme ul {
+    top: 46%;
+  }
+  #contactme li {
+    padding: 9px 17px;
   }
 }
 
@@ -428,16 +437,13 @@ footer p {
 
   #contactme h3 {
     font-size: 20px;
-    left: 19%;
-    top: 5%;
+    transform: translate(-50%, -0%);
   }
   #contactme ul {
-    left: 16%;
-    top: 42%;
+    transform: translate(-50%, -0%);
   }
   #contactme li {
     font-size: 20px;
-    margin: 5px 15px;
   }
   #intro a {
     top: 45%;
@@ -557,15 +563,13 @@ footer p {
   }
   #contactme h3 {
     font-size: 15px;
-    left: 15%;
-    max-width: 60%;
-    margin: 40px 0px;
+    transform: translate(-50%, -0%);
 
   }
   #contactme ul {
-    left: 6%;
-    top: 45%;
-    width: 65%;
+    top: 44%;
+    transform: translate(-50%, -0%);
+    left: 46%;
   }
   #contactme li {
     font-size: 14px;
