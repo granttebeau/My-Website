@@ -183,7 +183,7 @@ body {
 }
 #aboutme-personality img {
   position: absolute;
-  top: 16%;
+  top: 17%;
   float: left;
   width: 100%;
   height: auto;
@@ -667,7 +667,7 @@ footer p {
   }
   .aboutme-rightpic h2 {
     font-size: 20px;
-    left: 18%;
+    left: 24%;
     top: 5%;
   }
   .aboutme-rightpic p {
@@ -681,12 +681,13 @@ footer p {
     left: 40%;
   }
   #aboutme-personality h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   #aboutme-personality {
-    height: 300px;
+    height: 250px;
   }
+
   #contactme ul {
     top: 50%;
   }
