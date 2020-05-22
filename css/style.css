@@ -718,7 +718,8 @@ footer p {
   }
 
   #contactme ul {
-    top: 42%;
+    top: 46%;
+    transform: translate(-50%, -0%);
   }
   #contactme h3 {
     font-size: 12px;
