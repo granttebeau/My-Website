@@ -82,8 +82,8 @@ body {
   position: fixed;
   width: 25%;
   left: 19%;
+  transform: translate(-19%, -0%);
   top: 34%;
-  min-width: 145px;
   font-size: 50px;
 }
 #intro a {
@@ -92,6 +92,7 @@ body {
   font-size: 16px;
   top: 53%;
   left: 15%;
+  transform: translate(-15%, -0%);
 }
 
 /* styling for the about me page */
@@ -452,7 +453,6 @@ footer p {
   #intro a {
     top: 45%;
     width: 30%;
-    left: 14%;
     font-size: 12px;
   }
   #intro h2 {
@@ -498,6 +498,7 @@ footer p {
     height: 600px;
   }
 }
+
 
 @media only screen and (max-width: 825px) {
   .aboutme-leftpic {
@@ -552,13 +553,20 @@ footer p {
   #aboutme-personality {
     height: 500px;
   }
+
+  #intro h2 {
+    left: 17%;
+    transform: translate(-17%, -0%);
+  }
 }
+
 
 /* for a small screen size */
 @media only screen and (max-width: 600px) {
 
   #intro h2 {
     left: 13%;
+    transform: translate(-13%, -0%);
   }
 
   #topRect h1 {
@@ -655,6 +663,8 @@ footer p {
   #aboutme-personality {
     height: 400px;
   }
+
+
 }
 
 /* for a phone screen size */
@@ -707,21 +717,5 @@ footer p {
 
   #contactme ul {
     top: 42%;
-  }
-}
-
-
-/* updates intro screen height changes */
-@media only screen and (max-height: 600px) {
-  #intro a {
-    font-size: 12px;
-    width: 30%;
-    top: 59%;
-    left: 19%;
-  }
-  #intro h2 {
-    font-size: 35px;
-    left: 19%;
-    width: auto;
   }
 }
