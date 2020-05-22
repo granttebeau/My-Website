@@ -112,12 +112,14 @@ body {
   position: absolute;
   top: 28%;
   left: 56%;
+  transform: translate(-0%, -0%);
 }
 .aboutme-leftpic p {
   font-size: 16px;
   position: absolute;
   top: 39%;
   left: 53%;
+  transform: translate(-0%, -0%);
   line-height: 35px;
 }
 .aboutme-leftpic img {
@@ -140,12 +142,14 @@ body {
   position: absolute;
   top: 28%;
   left: 16%;
+  transform: translate(-0%, -0%);
   font-size: 40px;
 }
 .aboutme-rightpic p {
   position: absolute;
   top: 39%;
   left: 8%;
+  transform: translate(-0%, -0%);
   font-size: 16px;
   line-height: 35px;
 }
@@ -178,13 +182,16 @@ body {
 #aboutme-personality h1 {
   position: absolute;
   font-size: 50px;
-  top: 2%;
-  left: 33%;
+  top: 1%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -0%);
 }
 #aboutme-personality img {
   position: absolute;
   top: 17%;
-  float: left;
+  left: 0%;
+  transform: translate(-0%, -0%);
   width: 100%;
   height: auto;
   padding: 0px;
@@ -383,9 +390,6 @@ footer p {
     left: 7%;
   }
 
-  #aboutme-personality h1 {
-    left: 30%;
-  }
   #aboutme-personality {
     height: 700px;
   }
@@ -465,7 +469,7 @@ footer p {
   }
   .aboutme-leftpic h2 {
     font-size: 26px;
-    left: 56%;
+    left: 57%;
   }
   .aboutme-leftpic p {
     font-size: 12px;
@@ -489,7 +493,6 @@ footer p {
   }
   #aboutme-personality h1 {
     font-size: 40px;
-    left: 28%;
   }
   #aboutme-personality {
     height: 600px;
@@ -502,19 +505,22 @@ footer p {
   }
   .aboutme-leftpic h2 {
     font-size: 24px;
-    left: 34%;
+    left: 50%;
     top: 5%;
+    transform: translate(-50%, -0%);
   }
   .aboutme-leftpic p {
-    left: 25%;
+    left: 50%;
     top: 16%;
-    max-width: 90%;
     line-height: 30px;
+    width: 90%;
+    transform: translate(-50%, -0%);
   }
   .aboutme-leftpic img {
     width: 20%;
     top: 54%;
-    left: 40%;
+    left: 50%;
+    transform: translate(-50%, -0%);
   }
 
   .aboutme-rightpic {
@@ -522,23 +528,26 @@ footer p {
   }
   .aboutme-rightpic h2 {
     font-size: 24px;
-    left: 36%;
+    left: 50%;
     top: 5%;
+    transform: translate(-50%, -0%);
   }
   .aboutme-rightpic p {
-    left: 25%;
+    left: 50%;
     top: 16%;
-    max-width: 90%;
+    width: 90%;
     line-height: 30px;
+    transform: translate(-50%, -0%);
   }
   .aboutme-rightpic img {
     width: 20%;
     top: 52%;
-    left: 40%;
+    left: 50%;
+    transform: translate(-50%, -0%);
   }
 
-  #aboutme-personality h1 {
-    top: 1%;
+  #aboutme-personality img {
+    top: 20%;
   }
   #aboutme-personality {
     height: 500px;
@@ -605,17 +614,17 @@ footer p {
   }
   .aboutme-leftpic h2 {
     font-size: 20px;
-    left: 27%;
     top: 5%;
+    transform: translate(-50%, -0%);
   }
   .aboutme-leftpic p {
     font-size: 10px;
-    left: 16%;
+    transform: translate(-50%, -0%);
     line-height: 25px;
   }
   .aboutme-leftpic img {
     width: 18%;
-    left: 41%;
+    transform: translate(-50%, -0%);
   }
 
   .aboutme-rightpic {
@@ -623,22 +632,25 @@ footer p {
   }
   .aboutme-rightpic h2 {
     font-size: 20px;
-    left: 29%;
+    transform: translate(-50%, -0%);
     top: 5%;
   }
   .aboutme-rightpic p {
     font-size: 10px;
-    left: 14%;
+    transform: translate(-50%, -0%);
     line-height: 25px;
   }
   .aboutme-rightpic img {
     width: 18%;
-    left: 41%;
+    transform: translate(-50%, -0%);
   }
 
   #aboutme-personality h1 {
-    left: 24%;
     font-size: 30px;
+  }
+  #aboutme-personality img {
+    top: 22%;
+    transform: translate(-0%, -0%);
   }
   #aboutme-personality {
     height: 400px;
@@ -687,6 +699,7 @@ footer p {
   #aboutme-personality h1 {
     font-size: 20px;
   }
+
 
   #aboutme-personality {
     height: 250px;
