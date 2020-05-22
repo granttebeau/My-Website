@@ -12,4 +12,4 @@ I got the domain name from [namecheap](namecheap.com), and I'm using Github Page
 
 ## Acknowledgments
 
-* My roommate for inspiring me with this idea- check out his page here!
+* My roommate for inspiring me with this idea
