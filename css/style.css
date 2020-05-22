@@ -680,6 +680,8 @@ footer p {
   .aboutme-leftpic p {
     font-size: 9px;
     line-height: 25px;
+    top: 18%;
+    transform: translate(-50%, -0%);
   }
   .aboutme-leftpic img {
     width: 18%;
@@ -692,16 +694,18 @@ footer p {
   }
   .aboutme-rightpic h2 {
     font-size: 20px;
-    top: 5%;
+    top: 3%;
     transform: translate(-50%, -0%);
   }
   .aboutme-rightpic p {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 25px;
+
+    transform: translate(-50%, -0%);
   }
   .aboutme-rightpic img {
     width: 18%;
-    top: 62%;
+    top: 67%;
     transform: translate(-50%, -0%);
   }
   #aboutme-personality h1 {
