@@ -720,4 +720,9 @@ footer p {
   #contactme ul {
     top: 42%;
   }
+  #contactme h3 {
+    font-size: 12px;
+    transform: translate(-50%, -0%);
+
+  }
 }
