@@ -10,6 +10,4 @@ During my first semester of college, my roommate recommended that I create my ow
 
 I got the domain name from [namecheap](namecheap.com), and I'm using Github Pages to host the website with this name. 
 
-## Acknowledgments
 
-* My roommate for inspiring me with this idea

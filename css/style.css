@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0px;
@@ -8,91 +12,71 @@ body {
 }
 
 .bodypictureback {
-  background: url('../photos/NewYork.jpg');
+  background: url('https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80') center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-
-
-
-/* styling for the top navigation bar */
-
-
-#topRect {
-  z-index: 99;
-  position: fixed;
-  width: 100%;
-  transition: top 0.4s;
-}
-#topRect a {
-  float: left;
-  padding: 35px;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  list-style: none;
-  display: inline-block;
-}
-#hover {
-  display: inline-block;
-}
-#topRect-menu {
-  display: none;
-}
-#topRect-right #dropdown-content:hover{
-  background-color: #2b2b2b;
-  color: white;
-}
-.dropdown-content {
-  margin: 10px;
-}
-#topRect h1 {
-  margin: 0px;
-  padding: 2px 8px 8px 8px;
-  color: white;
-  width: auto;
-}
-#topRect i {
-  display: none;
+a {
+  color: black
 }
 
-
-#topRect-right {
-  float: right;
-  margin: 0px;
-  position: relative;
-  right: 0%;
-}
-.topRect-black {
+.navbar.scrolled {
   background: black;
+  color: white;
+  transition: background .5s;
+} 
+.navbar .navbar-brand {
+  font-size: 2rem;
+} 
+.nav-item .nav-link {
+  color: white !important;
 }
 
-/* styling for the text on top of the background picture  */
-#intro {
-  font-family: 'Open Sans', sans-serif;
+.underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+li.nav-item:hover .underline {
+	background-color: white;
+	width: 100%;
+}
+
+.intro {
+  height: 800px;
+}
+
+.intro-content {
+  margin-top: 300px;
   color: white;
-  padding: 390px;
-  position: relative;
   text-align: center;
 }
-#intro h2 {
-  position: fixed;
-  width: 25%;
-  left: 19%;
-  transform: translate(-19%, -0%);
-  top: 34%;
-  font-size: 50px;
+.intro-content h2 {
+  font-size: 2.5rem;
 }
-#intro a {
-  position: fixed;
-  width: 35%;
-  font-size: 16px;
-  top: 53%;
-  left: 15%;
-  transform: translate(-15%, -0%);
+.intro-content-photo {
+  margin-top: 215px;
+  color: white;
+  text-align: center;
+}
+
+.ccwebsite {
+  top: 29% !important;
+}
+.ccwebsite a {
+  color: white;
+}
+
+.melody {
+  top: 40% !important;
+  width: 80%;
 }
 
 /* styling for the about me page */
@@ -100,630 +84,195 @@ body {
   background-color: #dedede;
   overflow: hidden;
 }
-.aboutme-leftpic {
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  position: relative;
-  padding: 400px;
-  text-align: center;
-  overflow: hidden;
+.panel {
+  margin: 100px 0 50px 0;
 }
-.aboutme-leftpic h2 {
-  font-size: 40px;
-  position: absolute;
-  top: 28%;
-  left: 56%;
-  transform: translate(-0%, -0%);
+.panel h2 {
+  font-size: 2.3rem !important;
 }
-.aboutme-leftpic p {
-  font-size: 16px;
-  position: absolute;
-  top: 39%;
-  left: 53%;
-  transform: translate(-0%, -0%);
-  line-height: 35px;
+.panel-text {
+  line-height: 2.3rem;
 }
-.aboutme-leftpic img {
-  position: absolute;
-  height: auto;
-  width: 28%;
-  top: 12%;
-  left: 12%;
-}
-
-
-.aboutme-rightpic {
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  padding: 400px;
-  color: white;
-  text-align: center;
-}
-.aboutme-rightpic h2 {
-  position: absolute;
-  top: 28%;
-  left: 16%;
-  transform: translate(-0%, -0%);
-  font-size: 40px;
-}
-.aboutme-rightpic p {
-  position: absolute;
-  top: 39%;
-  left: 8%;
-  transform: translate(-0%, -0%);
-  font-size: 16px;
-  line-height: 35px;
-}
-.aboutme-rightpic a {
-  color: #ccc;
-  text-decoration: none;
-}
-.aboutme-rightpic img {
-  position: absolute;
-  height: auto;
-  width: 28%;
-  top: 12%;
-  left: 61%;
-}
-.darkgraybackground {
-  background-color: #696969;
-  overflow: hidden;
-}
-
-
-
-#aboutme-personality {
-  background-color: #aaa;
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  height: 850px;
-  color: black;
-  text-align: center;
-}
-#aboutme-personality h1 {
-  position: absolute;
-  font-size: 50px;
-  top: 1%;
-  left: 50%;
+.image {
   width: 100%;
-  transform: translate(-50%, -0%);
+  height: 400px;
+  object-fit: cover;
 }
-#aboutme-personality img {
+
+.northeastern {
+  width: 125%;
+  margin-left: -25%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.gallery-image {
+  display: block;
+}
+.overlay {
   position: absolute;
-  top: 17%;
-  left: 0%;
-  transform: translate(-0%, -0%);
-  width: 100%;
-  height: auto;
-  padding: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+  text-align: center;
 }
-#aboutme-personality .images {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  height: 80%;
+.overlay .text {
+  font-size: 0.9em;
+}
+.gallery-image-container:hover .gallery-image {
+  background-color:#000;
+  filter: brightness(40%);
+  transition: .5s ease;
+}
+.gallery-image-container:hover .overlay {
+  opacity: 1;
+  transition: .5s ease;
 }
 
-
-/* styling for the personal projects page */
-#pp-header {
-  font-family: 'Open Sans', sans-serif;
+ul.tech-stack-options {
+  display:inline;
+  list-style: none;
+}
+ul.tech-stack-options li {
+  display:inline-block;
+  margin: 0 10px 0 10px;
+}
+ul.tech-stack-options li a{
+  color: black;
+  background: none;
+  border: none
+}
+ul.tech-stack-options li a.btn-primary{
   color: white;
-  position: relative;
-  padding: 40px;
-  text-align: center;
-  font-size: 18px;
+  background: black;
+  border: none
 }
-.pp-list {
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  padding: 250px;
-  text-align: center;
-  border-top: 1px solid black;
+ul.tech-stack-options li a.btn-primary:hover{
+  color: white;
+  background: #444444
 }
-.pp-list h2 {
-  position: absolute;
-  top: 8%;
-  font-size: 50px;
-  left: 56%;
+
+.hidden {
+  display:none;
 }
-.pp-list p {
-  position: absolute;
-  top: 32%;
+
+.text {
+  color: white;
   font-size: 20px;
-  width: 54%;
-  left: 39%;
-}
-.pp-list a {
-  text-decoration: none;
-}
-.pp-list img {
-  position: absolute;
-  height: auto;
-  width: 25%;
-  border: 1px solid black;
-  top: 10%;
-  left: 4%;
-}
-
-
-/* styling for the contact me page */
-#contactme {
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  height: 650px;
-  width: auto;
-  color: black;
-  text-align: center;
-  overflow: hidden;
-}
-#contactme h3 {
-  position: absolute;
-  max-width: 50%;
-  left: 50%;
-  transform: translate(-50%, -0%);
-  font-size: 26px;
-  overflow: hidden;
-}
-#contactme ul {
   position: absolute;
   top: 50%;
-  left: 48%;
-  transform: translate(-50%, -0%);
-  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-#contactme li {
+
+.contact-form {
+  line-height: 1.5em;
+}
+.contact-form ul {
+  width: 150%;
+  margin-left: -25%;
+ }
+
+
+.icons-list {
   list-style: none;
-  margin: 5px 10px;
-  display: inline-block;
-  font-size: 24px;
-  padding: 12px 21px;
-  border: 1px solid black;
-  border-radius: 50%;
-  transition: .5s;
+  margin: 0;
+  padding: 0;
 }
-#contactme a {
+.icons-list li {
+  display: inline;
+  font-size: 2.3em;
+  margin: 0 20px;
+}
+.icons-list a {
   color: black;
 }
-#contactme a #github:hover {
-  color: #FF7F50;
-  border: 1px solid #FF7F50;
+
+.icons-list li:hover .fa-facebook-square {
+  color: #3b5998;
+  transition: .5s;
 }
-#contactme a #linkedin:hover {
-  color: #0072b1;
-  border: 1px solid #0072b1;
+
+.icons-list li:hover .fa-instagram-square {
+  color: #833ab4;
+  transition: .5s;
 }
-#contactme a #facebook:hover {
-  color: #4267B2;
-  border: 1px solid #4267B2;
+
+.icons-list li:hover .fa-linkedin {
+  color: #0e76a8;
+  transition: .5s;
 }
-#contactme a #instagram:hover {
-  color: #833AB4;
-  border: 1px solid #FD1D1D;
+
+.icons-list li:hover .fa-github-square {
+  color: #c9510c;
+  transition: .5s;
 }
-#contactme a #twitter:hover {
-  color: #00acee;
-  border: 1px solid #00acee;
+
+.icons-list li:hover .fa-twitter-square {
+  color: #1da1f2;
+  transition: .5s;
 }
 
 
 /* styling for the footer of the page */
-footer {
-  position: relative;
-  padding: 1px;
-  height: 35px;
-  text-align: center;
-  font-size: 18px;
+.footer {
+  margin: 0;
+  width: 100%;
+  color: white;
   background-color: black;
 }
-footer p {
-  top: 5px;
-  left: 50%;
-  color: white;
-  font-size: 12px;
-}
 
 
 
-
-
-/* media query for changing the background picture and some other things */
-@media only screen and (max-width: 870px) {
-  .bodypictureback {
-    background: url('../photos/vertnewYork.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    overflow: hidden;
+@media (max-width: 768px) {
+  .intro-content h2 {
+    font-size: 1.9rem;
   }
-
-  #topRect h1 {
-    font-size: 30px;
+  .intro-content p {
+    font-size: 1.5rem;
   }
-
-  .pp-list h2 {
-    left: 53%;
+  .panel {
+    margin: 100px 0 0px 0;
   }
-  .pp-list p {
-    font-size: 16px;
+  .contact-form {
+   font-size: 1.1rem;
+   line-height: 1.2em;
   }
-  .pp-list img {
-    top: 20%;
-  }
-
-  #contactme ul {
-    top: 46%;
-  }
-  #contactme li {
-    padding: 9px 17px;
-  }
-}
-
-
-
-@media only screen and (max-width: 1200px) {
-  #intro h2 {
-    font-size: 40px;
-  }
-  #intro a {
-    font-size: 14px;
-    top: 48%;
-  }
-  .aboutme-leftpic {
-    padding: 350px;
-  }
-  .aboutme-leftpic h2 {
-    font-size: 30px;
-  }
-  .aboutme-leftpic p {
-    font-size: 14px;
-    left: 51%;
-  }
-
-  .aboutme-rightpic {
-    padding: 350px;
-  }
-  .aboutme-rightpic h2 {
-    font-size: 30px;
-  }
-  .aboutme-rightpic p {
-    font-size: 14px;
-    left: 7%;
-  }
-
-  #aboutme-personality {
-    height: 700px;
-  }
-}
-
-
-/* controls the menu button */
-@media only screen and (max-width: 1000px) {
-  #topRect i {
-    display: block;
-    color: white;
-    padding: 5px;
-    top: 100px;
-    margin: 10px 25px;
-    font-size: 30px;
+  .contact-form ul {
+    width: 125%;
+    margin-left: -12.5%;
+   }
+  .contact-form ul li{
+    font-size: 1.9rem;
+    margin: 0 10px;
+   }
+  .tech-stack h3 {
+    float: none;
     text-align: center;
-    cursor: pointer;
   }
-  #hover {
-    display: block;
-    position: absolute;
-    width: 80%;
-    top: 100%;
-    height: 100%;
+  
+  .tech-stack ul {
+    float: none;
+    margin: 0 auto;
   }
-  #topRect-right a {
-    display: none;
-    background-color: black;
-    font-size: 14px;
-    padding: 10px 30px;
-    margin: 0px;
-    width: 40%;
-    float: left;
+  .tech-stack li {
+    font-size: 2.1em;
   }
-  .dropdown-content {
-    color: black;
+  .intro-content {
+    margin-top: 120px;
   }
-  #topRect-right {
-    position: relative;
-    display: block;
-    padding: 14px 16px 0px 16px;
-  }
-  #topRect i:hover {
-    background-color: black;
-  }
-  #topRect-right:hover a {
-    display: block;
+  .intro-content-photo {
+    margin-top: 165px;
   }
 
-  #contactme h3 {
-    font-size: 20px;
-    transform: translate(-50%, -0%);
+  .ccwebsite {
+    top: 50% !important;
   }
-  #contactme ul {
-    transform: translate(-50%, -0%);
-  }
-  #contactme li {
-    font-size: 20px;
-  }
-  #intro a {
-    top: 45%;
-    width: 30%;
-    font-size: 12px;
-  }
-  #intro h2 {
-    font-size: 30px;
-    width: auto;
-    top: 34%;
-  }
-  .pp-list h2 {
-    font-size: 40px;
-  }
-
-  .aboutme-leftpic {
-    padding: 300px;
-  }
-  .aboutme-leftpic h2 {
-    font-size: 26px;
-    left: 57%;
-  }
-  .aboutme-leftpic p {
-    font-size: 12px;
-    left: 51%;
-  }
-
-  .aboutme-rightpic {
-    padding: 300px;
-  }
-  .aboutme-rightpic h2 {
-    font-size: 26px;
-  }
-  .aboutme-rightpic p {
-    font-size: 12px;
-    left: 6%;
-  }
-  .aboutme-rightpic img {
-    left: 63%;
-    width: 23%;
-    top: 16%;
-  }
-  #aboutme-personality h1 {
-    font-size: 40px;
-  }
-  #aboutme-personality {
-    height: 600px;
-  }
-}
-
-
-@media only screen and (max-width: 825px) {
-  .aboutme-leftpic {
-    padding: 270px 10px;
-  }
-  .aboutme-leftpic h2 {
-    font-size: 24px;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-leftpic p {
-    left: 50%;
-    top: 16%;
-    line-height: 30px;
-    width: 90%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-leftpic img {
-    width: 20%;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -0%);
-  }
-
-  .aboutme-rightpic {
-    padding: 270px 10px;
-  }
-  .aboutme-rightpic h2 {
-    font-size: 24px;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-rightpic p {
-    left: 50%;
-    top: 16%;
-    width: 90%;
-    line-height: 30px;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-rightpic img {
-    width: 20%;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -0%);
-  }
-
-  #aboutme-personality img {
-    top: 20%;
-  }
-  #aboutme-personality {
-    height: 500px;
-  }
-
-  #intro h2 {
-    left: 17%;
-    transform: translate(-17%, -0%);
-  }
-}
-
-
-/* for a small screen size */
-@media only screen and (max-width: 600px) {
-
-  #intro h2 {
-    left: 13%;
-    transform: translate(-13%, -0%);
-  }
-
-  #topRect h1 {
-    font-size: 22px;
-  }
-  #topRect i {
-    padding: 10px;
-  }
-  #contactme {
-    height: 620px;
-  }
-  #contactme h3 {
-    font-size: 15px;
-    transform: translate(-50%, -0%);
-
-  }
-  #contactme ul {
-    top: 44%;
-    transform: translate(-50%, -0%);
-    left: 46%;
-  }
-  #contactme li {
-    font-size: 14px;
-    margin: 10px 20px;
-    padding: 6px 12px;
-  }
-
-  #pp-header {
-    font-size: 10px;
-    overflow: hidden;
-  }
-  .pp-list {
-    padding: 185px;
-  }
-  .pp-list h2 {
-    left: 49%;
-    font-size: 24px;
-  }
-  .pp-list p {
-    font-size: 10px;
-    top: 23%;
-    left: 39%;
-    max-width: 50%;
-  }
-  .pp-list img {
-    width: 27%;
-    top: 29%;
-  }
-
-
-  .aboutme-leftpic {
-    padding: 220px 10px;
-  }
-  .aboutme-leftpic h2 {
-    font-size: 20px;
-    top: 5%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-leftpic p {
-    font-size: 10px;
-    transform: translate(-50%, -0%);
-    line-height: 25px;
-  }
-  .aboutme-leftpic img {
-    width: 18%;
-    transform: translate(-50%, -0%);
-  }
-
-  .aboutme-rightpic {
-    padding: 220px 10px;
-  }
-  .aboutme-rightpic h2 {
-    font-size: 20px;
-    transform: translate(-50%, -0%);
-    top: 5%;
-  }
-  .aboutme-rightpic p {
-    font-size: 10px;
-    transform: translate(-50%, -0%);
-    line-height: 25px;
-  }
-  .aboutme-rightpic img {
-    width: 18%;
-    transform: translate(-50%, -0%);
-  }
-
-  #aboutme-personality h1 {
-    font-size: 30px;
-  }
-  #aboutme-personality img {
-    top: 22%;
-    transform: translate(-0%, -0%);
-  }
-  #aboutme-personality {
-    height: 400px;
-  }
-
-
-}
-
-/* for a phone screen size */
-@media only screen and (max-width: 450px) {
-  .aboutme-leftpic {
-    padding: 200px 10px;
-  }
-  .aboutme-leftpic h2 {
-    font-size: 20px;
-    top: 5%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-leftpic p {
-    font-size: 9px;
-    line-height: 25px;
-    top: 20%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-leftpic img {
-    width: 18%;
-    top: 60%;
-    transform: translate(-50%, -0%);
-  }
-
-  .aboutme-rightpic {
-    padding: 200px 10px;
-  }
-  .aboutme-rightpic h2 {
-    font-size: 20px;
-    top: 3%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-rightpic p {
-    font-size: 8px;
-    line-height: 25px;
-    top: 18%;
-    transform: translate(-50%, -0%);
-  }
-  .aboutme-rightpic img {
-    width: 18%;
-    top: 62%;
-    transform: translate(-50%, -0%);
-  }
-  #aboutme-personality h1 {
-    font-size: 20px;
-  }
-
-
-  #aboutme-personality {
-    height: 250px;
-  }
-
-  #contactme ul {
-    top: 44%;
-    transform: translate(-50%, -0%);
-  }
-  #contactme h3 {
-    font-size: 12px;
-    transform: translate(-50%, -0%);
-
+  .northeastern {
+    width: 100%;
   }
 }
