@@ -67,6 +67,10 @@ li.nav-item:hover .underline {
   text-align: center;
 }
 
+.plntnrepublic {
+  top: 23% !important;
+}
+
 .ccwebsite {
   top: 29% !important;
 }
@@ -270,6 +274,9 @@ ul.tech-stack-options li a.btn-primary:hover{
   }
 
   .ccwebsite {
+    top: 50% !important;
+  }
+  .plntnrepublic {
     top: 50% !important;
   }
   .northeastern {
