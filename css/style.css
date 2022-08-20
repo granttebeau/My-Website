@@ -9,6 +9,8 @@ body {
   margin: 0px;
   overflow: scroll;
   font-family: 'Open Sans', sans-serif;
+  color: black !important;
+  background-color: white;
 }
 
 .bodypictureback {
@@ -26,15 +28,15 @@ a {
 
 
 .navbar.scrolled {
-  background: black;
-  color: white;
+  color: black;
   transition: background .5s;
 } 
 .navbar .navbar-brand {
   font-size: 2rem;
+  color: black;
 } 
 .nav-item .nav-link {
-  color: white !important;
+  color: black !important;
 }
 
 .underline {
@@ -46,7 +48,7 @@ a {
 }
 
 li.nav-item:hover .underline {
-	background-color: white;
+	background-color: #021945;
 	width: 100%;
 }
 
@@ -54,19 +56,54 @@ li.nav-item:hover .underline {
   height: 800px;
 }
 
+
+.text-content {
+  margin-top: 100px;
+  text-align: left;
+}
+
+.top-margin {
+  margin-top: 250px;
+}
+
+.info-link {
+  text-decoration: underline;
+}
+
+.text-content button {
+  margin: 0 20px;
+  background: rgb(66, 90, 173);
+  border: 2px solid rgb(66, 90, 173);
+  width: 138px;
+  height: 39px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-content button.unclicked {
+  background: rgb(124, 138, 196);
+}
+
 .intro-content {
   margin-top: 300px;
-  color: white;
   text-align: center;
 }
 .intro-content h2 {
   font-size: 2.5rem;
 }
 .intro-content-photo {
-  margin-top: 215px;
-  color: white;
+  margin-top: 150px;
   text-align: center;
 }
+/* 
+.navbar-brand:hover {
+  color: black;
+} */
 
 .plntnrepublic {
   top: 23% !important;
@@ -76,7 +113,7 @@ li.nav-item:hover .underline {
   top: 29% !important;
 }
 .ccwebsite a {
-  color: white;
+  color: black;
 }
 
 .melody {
@@ -103,6 +140,7 @@ li.nav-item:hover .underline {
   height: 400px;
   object-fit: cover;
 }
+
 
 .northeastern {
   width: 125%;
@@ -151,12 +189,12 @@ ul.tech-stack-options li a{
   border: none
 }
 ul.tech-stack-options li a.btn-primary{
-  color: white;
+  color: black;
   background: black;
   border: none
 }
 ul.tech-stack-options li a.btn-primary:hover{
-  color: white;
+  color: black;
   background: #444444
 }
 
@@ -164,8 +202,13 @@ ul.tech-stack-options li a.btn-primary:hover{
   display:none;
 }
 
+.text-styling {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
 .text {
-  color: white;
+  color: black;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -191,7 +234,7 @@ ul.tech-stack-options li a.btn-primary:hover{
 .icons-list li {
   display: inline;
   font-size: 2.3em;
-  margin: 0 20px;
+  margin: 0 12px;
 }
 .icons-list a {
   color: black;
@@ -222,18 +265,36 @@ ul.tech-stack-options li a.btn-primary:hover{
   transition: .5s;
 }
 
+.icons-list li:hover .fa-envelope-square {
+  color: rgb(58, 144, 235);
+  transition: .5s;
+}
+
+ p a {
+  color: rgb(66, 90, 173);
+ }
+
 
 /* styling for the footer of the page */
 .footer {
   margin: 0;
   width: 100%;
-  color: white;
-  background-color: black;
 }
 
-
+@media (max-width: 992px) {
+  .icons-list li {
+    margin: 0 2px;
+  }
+}
 
 @media (max-width: 768px) {
+  .text-content {
+    margin-top: 40px !important;
+    justify-content: center;
+  }
+  .navbar-collapse, .navbar-toggler {
+    display: none;
+  }
   .intro-content h2 {
     font-size: 1.9rem;
   }
@@ -268,19 +329,13 @@ ul.tech-stack-options li a.btn-primary:hover{
     font-size: 2.1em;
   }
   .intro-content {
-    margin-top: 120px;
+    margin-top: 55px;
   }
   .intro-content-photo {
-    margin-top: 165px;
+    margin-top: 55px;
   }
 
-  .ccwebsite {
-    top: 50% !important;
-  }
-  .plntnrepublic {
-    top: 50% !important;
-  }
-  .northeastern {
-    width: 100%;
+  .fixed-top {
+    position: relative;
   }
 }
