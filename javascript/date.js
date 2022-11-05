@@ -1,4 +1,4 @@
-let thirteenth = new Date("Dec 13, 2022 7:30 pm");
+let thirteenth = new Date("Dec 12, 2022 8:00 pm");
 var _second = 1000;
 var _minute = _second * 60;
 var _hour = _minute * 60;
